@@ -26,5 +26,9 @@ pipeline {
                 sleep 5
             }
         }
+        stage('production') {
+            steps {
+                echo 'i love you so much'
+                sleep 9
     }
 }
