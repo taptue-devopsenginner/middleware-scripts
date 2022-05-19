@@ -5,31 +5,31 @@ pipeline {
         stage('Hello-hello') {
             steps {
                 echo 'Hello'
-                sleep 10
+                sleep 5
             }
         }
         stage('Building') {
             steps {
                 echo 'Build'
-                sleep 10
+                sleep 5
             }
         }
         stage('Testing') {
             steps {
                 echo 'Test'
-                sleep 10
+                sleep 5
             }
         }
         stage('Deployment') {
             steps {
                 echo 'Deployment'
-                sleep 10
+                sleep 5
             }
         }
         stage('production') {
             steps {
-                echo 'i love you so much'
-                sleep 10
+                echo 'you will be okay'
+                sleep 5
                 
             }
         }
