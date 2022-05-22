@@ -5,31 +5,31 @@ pipeline {
         stage('pull-from-git') {
             steps {
                 echo 'Hello'
-                sleep 5
+                sleep 10
             }
         }
         stage('Building') {
             steps {
                 echo 'Build'
-                sleep 5
+                sleep 10
             }
         }
         stage('Testing') {
             steps {
                 echo 'Test'
-                sleep 5
+                sleep 10
             }
         }
-        stage('artifact-create') {
+        stage('artifact-created') {
             steps {
                 echo 'Deployment'
-                sleep 5
+                sleep 10
             }
         }
         stage('upload-artifact') {
             steps {
-                echo 'i love you so much'
-                sleep 5
+                echo 'artifact has been create'
+                sleep 10
                 
             }
         }
