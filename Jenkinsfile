@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello-hello') {
+        stage('pull-from-git') {
             steps {
                 echo 'Hello'
                 sleep 5
@@ -20,13 +20,13 @@ pipeline {
                 sleep 5
             }
         }
-        stage('Deployment') {
+        stage('artifact-create') {
             steps {
                 echo 'Deployment'
                 sleep 5
             }
         }
-        stage('production') {
+        stage('upload-artifact') {
             steps {
                 echo 'i love you so much'
                 sleep 5
